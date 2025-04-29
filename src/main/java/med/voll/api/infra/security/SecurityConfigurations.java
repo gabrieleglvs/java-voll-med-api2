@@ -23,7 +23,11 @@ public class SecurityConfigurations {
         return http.csrf(csrf -> csrf.disable())
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(req -> {
-                    req.requestMatchers(new AntPathRequestMatcher("/login", "POST")).permitAll();
+                    req.requestMatchers(new AntPathRequestMatcher("/login", "POST")).permitAll()
+                            .requestMatchers(
+                                    new AntPathRequestMatcher("/v3/api-docs/**"),
+                                    new AntPathRequestMatcher("/swagger-ui/**"),
+                                    new AntPathRequestMatcher("/swagger-ui.html")).permitAll();
                     req.anyRequest().authenticated();
                 })
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
