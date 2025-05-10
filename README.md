@@ -1,8 +1,8 @@
 ## 💻 Sobre o projeto
 
-Voll.med é uma clínica médica fictícia que precisa de um aplicativo para gestão de consultas. O aplicativo deve possuir funcionalidades que permitam o cadastro de médicos e de pacientes, e também o agendamento e cancelamento de consultas.
+Voll.med é uma clínica médica fictícia que precisa de um aplicativo para gestão de consultas. Este repositório documenta o desenvolvimento da API Rest deste projeto, o qual foi criado como parte de um curso de Spring Boot na plataforma Alura.
 
-Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento da API Rest desse projeto.
+A base do projeto foi inicialmente fornecida pelo instrutor Rodrigo Ferreira, e ao longo do curso, fiz modificações, implementações e melhorias para entender o funcionamento do Spring Boot, Java e outras tecnologias.
 
 ---
 
@@ -10,10 +10,39 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 
 - [x] CRUD de médicos;
 - [x] CRUD de pacientes;
-- [ ] Agendamento de consultas(em breve);
-- [ ] Cancelamento de consultas(em breve);
+- [x] Agendamento de consultas;
+- [x] Cancelamento de consultas;
 
 ---
+
+## ✍🏾 Minhas considerações
+
+Este projeto foi extremamente importante não só para colocar em práticas os conhecimentos básicos de Programação Orientada a Objetos em Java, como também para me apresentar ao Spring Framework e suas infinitas possibilidades. 
+
+Através deste projeto pude aprender a amadurecer conhecimentos sobre: 
+
+- Tipos
+- Modificadores de acesso
+- Excessões
+- Streams
+- Interfaces
+- Records (DTOs)
+
+Bem como trabalhar com:
+
+- Spring Initializr
+- Spring Boot
+- JPA com Hibernate
+- Spring MVC
+- Derived Queries
+- JPQL
+- Lombok
+- Spring Validation
+- Bando de dados MySQL
+- Flyway Migration
+- Spring Security com JWT
+- Spring Doc
+- Testes automatizados com JUnit
 
 ## 🎨 Layout
 
@@ -46,5 +75,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 Projeto desenvolvido por [Alura](https://www.alura.com.br) e utilizado nos cursos de Spring Boot.
 
 Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira) 
+
+
 
 ---
